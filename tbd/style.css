@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f8f8f8;
+  }
+
+  #posts-container {
+    
+    display: grid;
+    grid-gap: 20px;
+    align-items: stretch;
+    justify-content: space-around;
+    align-content: center;
+    justify-items: stretch;
+ }
+
+ header{
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+    align-items: center; /* Выравнивание элементов по вертикали по центру */
+    padding: 10px 20px; /* Отступы внутри header */
+    background-color: #ffffff; /* Цвет фона header */
+    position: relative; /* Для абсолютного позиционирования изображения */
+ }
+
+ .h_icon{
+  display: flex;
+  gap: 9px;
+  width: auto;
+ }
+
+
+ .box{
+    top: 9px;
+    width: 50px; /* Ширина и высота контейнера */
+    height: 50px;
+    overflow: hidden; /* Обрезка изображения */
+    border-radius: 50%; /* Округление до круга */
+    position: absolute; /* Абсолютное позиционирование */
+    right: 20px; /* Расстояние от правого края заголовка */
+    
+    
+ }
+  
+ .box img {
+    width: 100%; /* Сжать изображение до размера контейнера */
+    height: 100%;
+    object-fit: cover; /* Обр /* Обрезка или масштабирование для заполнения контейнера */
+}
+
+
+  .post {
+    background-color: #fff;
+    width: 500px;
+padding: 10px;
+    height: 500px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+
+  .post img {
+    width: 85%;
+    height: 78% ;
+    display: block;
+    border-radius: 8px;
+  }
+
+  .post-content {
+    padding: 20px;
+  }
+
+  .post-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .post-link {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .post-link:hover {
+    color: #666;
+  }
